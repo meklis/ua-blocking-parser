@@ -21,7 +21,7 @@ class CipGetter
             'headers' => [
                 'Accept-Encoding' => 'gzip, deflate, br',
                 'Accept-Language' => 'uk',
-                'User-Agent' => 'cip.gov.ua parser/0.0.1 (Reading articles and blocked domains)'
+                'User-Agent' => 'cip.gov.ua parser/0.0.1 (Reading articles and blocked domains - meklis/ua-blocking-parser)'
             ],
         ]);
     }
