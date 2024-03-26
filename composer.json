@@ -1,0 +1,25 @@
+{
+  "name": "meklis/ua-blocking-parser",
+  "license": "MIT",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Max Boyar",
+      "email": "max.boyar.a@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "7.*|8.*",
+    "ext-json": "*",
+    "monolog/monolog": "^1.24",
+    "php-di/php-di": "^6.0",
+    "vlucas/phpdotenv": "^4.1",
+    "meklis/array-to-object-mapper": "*",
+    "guzzlehttp/guzzle": "7.9.x-dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "Meklis\\UaBlockParser\\": "src/"
+    }
+  }
+}
