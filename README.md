@@ -1,7 +1,12 @@
 # cip.gov.ua - Отримання списку доменів
 
 ## Встановлення 
-Необхідно встановити php (7.4+, 8+) та composer
+Необхідно встановити php (7.4+, 8+) та composer     
+Модулі php:
+
+* json
+* intl
+* mbstring
 
 ```shell
 git clone git@github.com:meklis/ua-blocking-parser.git

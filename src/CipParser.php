@@ -20,7 +20,8 @@ class CipParser
                 print_r($url);
                 throw new \Exception("Host not found in URL - {$line}");
             }
-            $domains[] = $url['host'];
+            $url['host'] = str_replace([" ", ")", "("], "", trim($url['host'], '.'));
+            $domains[] = idn_to_ascii($url['host']);
         }
         return array_values(array_unique($domains));
     }

@@ -11,6 +11,7 @@
   "require": {
     "php": "7.*|8.*",
     "ext-json": "*",
+    "ext-intl": "*",
     "monolog/monolog": "^1.24",
     "php-di/php-di": "^6.0",
     "vlucas/phpdotenv": "^4.1",
