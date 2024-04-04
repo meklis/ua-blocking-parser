@@ -9,7 +9,7 @@
 * mbstring
 
 ```shell
-git clone git@github.com:meklis/ua-blocking-parser.git
+git clone https://github.com/meklis/ua-blocking-parser.git
 cd ua-blocking-parser
 composer install
 ```
