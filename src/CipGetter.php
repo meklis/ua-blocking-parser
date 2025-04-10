@@ -18,6 +18,7 @@ class CipGetter
 
     function __construct()
     {
+        $jar = new CookieJar();
         $this->client = new Client([
             'base_uri' => 'https://cip.gov.ua',
             'headers' => [
@@ -37,10 +38,7 @@ class CipGetter
                 'Pragma' => 'no-cache',
                 'Cache-Control' => 'no-cache',
             ],
-            'cookies' => CookieJar::fromArray([
-                'NG_TRANSLATE_LANG_KEY' => '%22ua%22',
-                'bm_sv' => 'AD6E5B6E5E4A06C5A8D92EEFA4CFFE35~YAAQVBdlX7c3irKVAQAAQ/kC8RvoJcPCNfsc9z5L43QF4+Wz80BnwTAUZ9qKfG6b0ATjwIaKkBeb/y5QVbPSvU4HtKZ45Vvl8EClTmAW/LCT3iPXKLqkfai4P66lX0SqxcCgSN8A1AYGKgTu7VYZTUzRBrNodt9J5qn7FQg4OTOPjrUQmGe3KiT4JPkTEkZKMeqq9kRMI6kGjBsm4ojA3L1r8+fDMZ3Oi0c9g5V+8TtSghCHT0WZRBJCHPf5/n2X~1',
-            ], 'cip.gov.ua'),
+            'cookies' => $jar,
             'http_errors' => false,
             'allow_redirects' => true,
             'decode_content' => true,
